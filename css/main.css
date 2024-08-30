@@ -205,6 +205,108 @@ body {
   z-index: 9;
 }
 
+
+
+
+
+
+
+.first-of-type {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: showup 7s;
+}
+
+.last-of-type {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0px;
+  animation: reveal 7s;
+}
+
+.last-of-span {
+  margin-left: -355px;
+  animation: slidein 7s;
+  animation: stoped infinite;
+}
+
+@keyframes showup {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: -800px;
+  }
+
+  20% {
+    margin-left: -800px;
+  }
+
+  35% {
+    margin-left: 0px;
+  }
+
+  100% {
+    margin-left: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+
+  20% {
+    opacity: 1;
+    width: 0px;
+  }
+
+  30% {
+    width: 355px;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+    width: 355px;
+  }
+}
+
+@keyframes stoped {
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
 /* Header */
 
 .header {
@@ -213,8 +315,7 @@ body {
 
   display: flex;
   justify-content: center;
-  align-items: center;
-
+  padding-top: 150px;
   background-color: var(--dark-bg);
   background-image: url('./../img/header-bg.png');
   background-repeat: no-repeat;
@@ -318,6 +419,7 @@ body {
   flex-wrap: wrap;
   column-gap: 30px;
   row-gap: 40px;
+  margin-bottom: 30px;
 }
 
 .project {
@@ -327,12 +429,15 @@ body {
   border-radius: 10px;
 }
 
-
 .project__box {
   width: 370px;
   height: 100%;
   border: #5C62EC solid;
   border-radius: 13px;
+}
+
+.project__link-img {
+  position: relative;
 }
 
 .project__img {
@@ -341,12 +446,38 @@ body {
   height: 278px;
 }
 
+.project__img:hover {
+  filter: grayscale(100%)
+}
+
+
+
+
+.plashka {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 0;
+}
+
+/* .plaska {
+  position: absolute;
+
+  z-index: 10;
+} */
+
+.project__img:hover {
+  background-color: #5C62EC;
+  transition: all 0.3s;
+  z-index: 5;
+}
 
 .name-project {
   display: flex;
   justify-content: space-between;
 }
-
 
 
 .project__title {
@@ -355,6 +486,11 @@ body {
   font-size: 24px;
   line-height: 2.3;
   color: var(--project-card-text);
+}
+
+.project__title:hover {
+  color: #5C62EC;
+  transition: all 0.3s;
 }
 
 

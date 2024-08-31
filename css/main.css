@@ -584,6 +584,21 @@ body {
   margin-top: 0.5em;
 }
 
+
+.contacts-list {
+  padding-left: 20%;
+}
+
+.contacts-list__item {
+  line-height: 45px;
+}
+
+.address__text {
+  color: #5C62EC;
+  font-size: 20px;
+  line-height: 40px;
+}
+
 @media (max-width: 620px) {
 
   /* Header  */

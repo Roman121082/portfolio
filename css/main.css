@@ -112,13 +112,44 @@ body {
   }
 }
 
-
-.title-2 {
+.typed-out__box {
+  display: inline-block;
   margin-bottom: 20px;
+}
 
+.typed-out {
   font-size: 40px;
   font-weight: 700;
   line-height: 1.3;
+  overflow: hidden;
+  /* border-right: .15em solid orange; */
+  white-space: nowrap;
+  width: 0;
+  animation:
+    typing 2s steps(20, end) forwards;
+  animation-delay: 4s;
+}
+
+/* .typed-out::after {
+  content: "";
+  width: 2px;
+  height: 45px;
+  background-color: orange;
+} */
+
+@keyframes typing {
+  from {
+    width: 0;
+    border-right: .15em solid orange;
+  }
+
+  99% {
+    border-right: .15em solid orange;
+  }
+
+  to {
+    width: 100%;
+  }
 }
 
 /* Nav */

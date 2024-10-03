@@ -29,6 +29,21 @@
 
   /* Header  */
 
+  .title {
+    animation: animate 3.5s linear;
+  }
+
+  @keyframes animate {
+
+    0% {
+      font-size: 7px;
+    }
+
+    100% {
+      font-size: 30px;
+    }
+  }
+
   .header__title {
     font-size: 30px;
   }

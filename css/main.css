@@ -375,6 +375,7 @@ body {
   border-radius: 50%;
   overflow: hidden;
   transition: background-color, color, stroke, outline-color, outline-offset 0.3s ease-in;
+  padding-bottom: 20px;
 }
 
 .prev__arrow-link svg:hover {

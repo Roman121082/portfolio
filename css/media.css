@@ -24,15 +24,19 @@
   .fullscreen-bg__video {
     height: calc(100vh - 129px);
   }
+
+  .nav-list {
+    font-size: 18px;
+  }
 }
 
-@media (max-width: 350px) {
+/* @media (max-width: 350px) {
 
   .header,
   .fullscreen-bg__video {
     height: calc(100vh - 218px);
   }
-}
+} */
 
 
 

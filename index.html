@@ -1,205 +1,404 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Freelancer portfolio</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Freelancer portfolio</title>
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="./css/media.css">
-</head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <div class="nav-row">
+          <a href="./index.html" class="logo"
+            ><strong>Freelancer</strong> portfolio</a
+          >
 
-<body>
-  <nav class="nav">
-    <div class="container">
-      <div class="nav-row">
-        <a href="./index.html" class="logo"><strong>Freelancer</strong> portfolio</a>
+          <button class="dark-mode-btn">
+            <img
+              src="./img/icons/sun.svg"
+              alt="Light mode"
+              class="dark-mode-btn__icon"
+            />
+            <img
+              src="./img/icons/moon.svg"
+              alt="Dark mode"
+              class="dark-mode-btn__icon"
+            />
+          </button>
 
-        <button class="dark-mode-btn">
-          <img src="./img/icons/sun.svg" alt="Light mode" class="dark-mode-btn__icon">
-          <img src="./img/icons/moon.svg" alt="Dark mode" class="dark-mode-btn__icon">
-        </button>
-
-        <ul class="nav-list">
-          <li class="nav-list__item"><a href="./index.html" class="nav-list__link nav-list__link--active">Projects</a>
-          </li>
-          <li class="nav-list__item"><a href="./skills.html" class="nav-list__link">Skills</a></li>
-          <li class="nav-list__item"><a href="./contacts.html" class="nav-list__link">Contacts</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <header class="header">
-    <video loop="" muted="" autoplay="" poster="video/plane.jpg" class="fullscreen-bg__video">
-      <source src="video/video_bg.mp4" type="video/mp4">
-    </video>
-    <div class="header__wrapper">
-      <h1 class="title">Hi, my name is <strong class="name">Roman</strong></h1>
-      <div class="typed-out__box">
-        <h2 class="typed-out">frontend developer</h2>
-      </div>
-    </div>
-    <a class="prev__arrow-link" href="#projects">
-      <svg width="97" height="97" viewBox="0 0 97 97" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="48.5" cy="48.5" r="48" stroke="white"></circle>
-        <rect x="34.4255" y="43.9162" width="1.82001" height="20.0201" transform="rotate(-44.9975 34.4255 43.9162)"
-          fill="currentColor"></rect>
-        <rect x="48.5807" y="58.0737" width="1.82001" height="20.0201" transform="rotate(-134.997 48.5807 58.0737)"
-          fill="currentColor"></rect>
-      </svg>
-    </a>
-
-  </header>
-
-  <main class="main">
-    <div class="container">
-      <h2 class="title-1">Projects</h2>
-      <section class="projects" id="projects">
-
-        <article class="project__box">
-          <div class="name-project">
-            <a class="project__title" href="https://roman121082.github.io/GO/" target="_blank">Game over</a>
-            <a class="github__link" href="https://github.com/Roman121082/GO.git" target="_blank"><img
-                class="github__link-icon" src="./img/icons/github.png" alt=""></a>
-          </div>
-          <a class="project__link-img" href="https://roman121082.github.io/GO/" target="_blank">
-            <img src="./img/projects/01.jpg" alt="Project img" class="project__img">
-            <div class="plashka"></div>
-          </a>
-        </article>
-        <!-- / ======================================================2 -->
-        <article class="project__box">
-          <div class="name-project">
-            <a class="project__title" href="https://roman121082.github.io/marcho/app/" target="_blank">Online store</a>
-            <a class="github__link" href="https://github.com/Roman121082/marcho.git" target="_blank"><img
-                class="github__link-icon" src="./img/icons/github.png" alt=""></a>
-          </div>
-          <a href="https://roman121082.github.io/marcho/app/" target="_blank">
-            <img src="./img/projects/02.jpg" alt="Project img" class="project__img">
-          </a>
-        </article>
-        <!-- / ======================================================3 -->
-        <article class="project__box">
-          <div class="name-project">
-            <a class="project__title" href="https://roman121082.github.io/ShopOnline" target="_blank">ShopOnline</a>
-            <a class="github__link" href="https://github.com/Roman121082/ShopOnline.git" target="_blank"><img
-                class="github__link-icon" src="./img/icons/github.png" alt=""></a>
-          </div>
-          <a href="https://roman121082.github.io/ShopOnline" target="_blank">
-            <img src="./img/projects/03.jpg" alt="Project img" class="project__img">
-          </a>
-        </article>
-
-        <!-- / ======================================================4 -->
-        <article class="project__box">
-          <div class="name-project">
-            <a class="project__title" href="https://roman121082.github.io/aibolit/app/" target="_blank">Vet clinic</a>
-            <a class="github__link" href="https://github.com/Roman121082/aibolit.git" target="_blank"><img
-                class="github__link-icon" src="./img/icons/github.png" alt=""></a>
-          </div>
-          <a href="https://roman121082.github.io/aibolit/app/" target="_blank">
-            <img src="./img/projects/04.jpg" alt="Project img" class="project__img">
-          </a>
-        </article>
-
-
-        <!-- / ======================================================5 -->
-        <article class="project__box">
-          <div class="name-project">
-            <a class="project__title" href="roman121082.github.io/m_3-l_5/" target="_blank">Trade
-              offer</a>
-            <a class="github__link" href="https://github.com/Roman121082/m_3-l_5.git" target="_blank"><img
-                class="github__link-icon" src="./img/icons/github.png" alt=""></a>
-          </div>
-          <a href="roman121082.github.io/m_3-l_5/" target="_blank">
-            <img src="./img/projects/05.jpg" alt="Project img" class="project__img">
-          </a>
-        </article>
-
-
-        <!-- / ======================================================6 -->
-        <article class="project__box">
-          <div class="name-project">
-            <a class="project__title" href="https://roman121082.github.io/new_collection/app/" target="_blank">New
-              collection</a>
-            <a class="github__link" href="https://github.com/Roman121082/new_collection.git" target="_blank"><img
-                class="github__link-icon" src="./img/icons/github.png" alt=""></a>
-          </div>
-          <a href="https://roman121082.github.io/new_collection/app/" target="_blank">
-            <img src="./img/projects/06.jpg" alt="Project img" class="project__img">
-          </a>
-        </article>
-
-
-        <!-- / ======================================================7 -->
-        <article class="project__box">
-          <div class="name-project">
-            <a class="project__title" href="https://roman121082.github.io/safari-landing-page/"
-              target="_blank">Safari</a>
-            <a class="github__link" href="https://github.com/Roman121082/safari-landing-page.git" target="_blank"><img
-                class="github__link-icon" src="./img/icons/github.png" alt=""></a>
-          </div>
-          <a href="https://roman121082.github.io/safari-landing-page/" target="_blank">
-            <img src="./img/projects/07.jpg" alt="Project img" class="project__img">
-          </a>
-        </article>
-
-
-        <!-- / ======================================================8 -->
-        <article class="project__box">
-          <div class="name-project">
-            <a class="project__title" href="https://roman121082.github.io//restaurant/app/"
-              target="_blank">Restaurant</a>
-            <a class="github__link" href="https://github.com/Roman121082/restaurant.git" target="_blank"><img
-                class="github__link-icon" src="./img/icons/github.png" alt=""></a>
-          </div>
-          <a href="https://roman121082.github.io//restaurant/app/" target="_blank">
-            <img src="./img/projects/08.jpg" alt="Project img" class="project__img">
-          </a>
-        </article>
-
-        <!-- / ======================================================9 -->
-        <article class="project__box">
-          <div class="name-project">
-            <a class="project__title" href="https://roman121082.github.io/space-landing-page/" target="_blank">Space</a>
-            <a class="github__link" href="https://github.com/Roman121082/space-landing-page.git" target="_blank"><img
-                class="github__link-icon" src="./img/icons/github.png" alt=""></a>
-          </div>
-          <a href="https://roman121082.github.io/space-landing-page/" target="_blank">
-            <img src="./img/projects/09.jpg" alt="Project img" class="project__img">
-          </a>
-        </article>
-
-      </section>
-
-    </div>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__wrapper">
-        <ul class="social">
-          <li class="social__item"><a href="https://vk.com/rouman1982">
-              <img src="./img/icons/vk.svg" alt="Link" target="_blank"></a>
-          </li>
-          <li class="social__item"><a href="https://t.me/Roman121082">
-              <img src="./img/icons/tl.svg" alt="Link" target="_blank"></a>
-          </li>
-          <li class="social__item"><a href="https://github.com/Roman121082">
-              <img src="./img/icons/gitHub.svg" alt="Link" target="_blank"></a>
-          </li>
-        </ul>
-        <div class="copyright">
-          <p>© 2024</p>
+          <ul class="nav-list">
+            <li class="nav-list__item">
+              <a
+                href="./index.html"
+                class="nav-list__link nav-list__link--active"
+                >Projects</a
+              >
+            </li>
+            <li class="nav-list__item">
+              <a href="./skills.html" class="nav-list__link">Skills</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="./contacts.html" class="nav-list__link">Contacts</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-  </footer>
+    </nav>
 
-  <script src="./js/main.js"></script>
+    <header class="header">
+      <video
+        loop=""
+        muted=""
+        autoplay=""
+        poster="video/plane.jpg"
+        class="fullscreen-bg__video"
+      >
+        <source src="video/video_bg.mp4" type="video/mp4" />
+      </video>
+      <div class="header__wrapper">
+        <h1 class="title">
+          Hi, my name is <strong class="name">Roman</strong>
+        </h1>
+        <div class="typed-out__box">
+          <h2 class="typed-out">frontend developer</h2>
+        </div>
+      </div>
+      <a class="prev__arrow-link" href="#projects">
+        <svg
+          width="97"
+          height="97"
+          viewBox="0 0 97 97"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="48.5" cy="48.5" r="48" stroke="white"></circle>
+          <rect
+            x="34.4255"
+            y="43.9162"
+            width="1.82001"
+            height="20.0201"
+            transform="rotate(-44.9975 34.4255 43.9162)"
+            fill="currentColor"
+          ></rect>
+          <rect
+            x="48.5807"
+            y="58.0737"
+            width="1.82001"
+            height="20.0201"
+            transform="rotate(-134.997 48.5807 58.0737)"
+            fill="currentColor"
+          ></rect>
+        </svg>
+      </a>
+    </header>
 
-</body>
+    <main class="main">
+      <div class="container">
+        <h2 class="title-1">Projects</h2>
+        <section class="projects" id="projects">
+          <article class="project__box">
+            <div class="name-project">
+              <a
+                class="project__title"
+                href="https://roman121082.github.io/GO/"
+                target="_blank"
+                >Game over</a
+              >
+              <a
+                class="github__link"
+                href="https://github.com/Roman121082/GO.git"
+                target="_blank"
+                ><img
+                  class="github__link-icon"
+                  src="./img/icons/github.png"
+                  alt=""
+              /></a>
+            </div>
+            <a
+              class="project__link-img"
+              href="https://roman121082.github.io/GO/"
+              target="_blank"
+            >
+              <img
+                src="./img/projects/01.jpg"
+                alt="Project img"
+                class="project__img"
+              />
+              <div class="plashka"></div>
+            </a>
+          </article>
+          <!-- / ======================================================2 -->
+          <article class="project__box">
+            <div class="name-project">
+              <a
+                class="project__title"
+                href="https://roman121082.github.io/marcho/app/"
+                target="_blank"
+                >Online store</a
+              >
+              <a
+                class="github__link"
+                href="https://github.com/Roman121082/marcho.git"
+                target="_blank"
+                ><img
+                  class="github__link-icon"
+                  src="./img/icons/github.png"
+                  alt=""
+              /></a>
+            </div>
+            <a href="https://roman121082.github.io/marcho/app/" target="_blank">
+              <img
+                src="./img/projects/02.jpg"
+                alt="Project img"
+                class="project__img"
+              />
+            </a>
+          </article>
+          <!-- / ======================================================3 -->
+          <article class="project__box">
+            <div class="name-project">
+              <a
+                class="project__title"
+                href="https://roman121082.github.io/ShopOnline"
+                target="_blank"
+                >ShopOnline</a
+              >
+              <a
+                class="github__link"
+                href="https://github.com/Roman121082/ShopOnline.git"
+                target="_blank"
+                ><img
+                  class="github__link-icon"
+                  src="./img/icons/github.png"
+                  alt=""
+              /></a>
+            </div>
+            <a href="https://roman121082.github.io/ShopOnline" target="_blank">
+              <img
+                src="./img/projects/03.jpg"
+                alt="Project img"
+                class="project__img"
+              />
+            </a>
+          </article>
 
+          <!-- / ======================================================4 -->
+          <article class="project__box">
+            <div class="name-project">
+              <a
+                class="project__title"
+                href="https://roman121082.github.io/aibolit/app/"
+                target="_blank"
+                >Vet clinic</a
+              >
+              <a
+                class="github__link"
+                href="https://github.com/Roman121082/aibolit.git"
+                target="_blank"
+                ><img
+                  class="github__link-icon"
+                  src="./img/icons/github.png"
+                  alt=""
+              /></a>
+            </div>
+            <a
+              href="https://roman121082.github.io/aibolit/app/"
+              target="_blank"
+            >
+              <img
+                src="./img/projects/04.jpg"
+                alt="Project img"
+                class="project__img"
+              />
+            </a>
+          </article>
+
+          <!-- / ======================================================5 -->
+          <article class="project__box">
+            <div class="name-project">
+              <a
+                class="project__title"
+                href="https://roman121082.github.io/m_3-l_5/"
+                target="_blank"
+                >Trade offer</a
+              >
+              <a
+                class="github__link"
+                href="https://github.com/Roman121082/m_3-l_5.git"
+                target="_blank"
+                ><img
+                  class="github__link-icon"
+                  src="./img/icons/github.png"
+                  alt=""
+              /></a>
+            </div>
+            <a href="roman121082.github.io/m_3-l_5/" target="_blank">
+              <img
+                src="./img/projects/05.jpg"
+                alt="Project img"
+                class="project__img"
+              />
+            </a>
+          </article>
+
+          <!-- / ======================================================6 -->
+          <article class="project__box">
+            <div class="name-project">
+              <a
+                class="project__title"
+                href="https://roman121082.github.io/new_collection/app/"
+                target="_blank"
+                >New collection</a
+              >
+              <a
+                class="github__link"
+                href="https://github.com/Roman121082/new_collection.git"
+                target="_blank"
+                ><img
+                  class="github__link-icon"
+                  src="./img/icons/github.png"
+                  alt=""
+              /></a>
+            </div>
+            <a
+              href="https://roman121082.github.io/new_collection/app/"
+              target="_blank"
+            >
+              <img
+                src="./img/projects/06.jpg"
+                alt="Project img"
+                class="project__img"
+              />
+            </a>
+          </article>
+
+          <!-- / ======================================================7 -->
+          <article class="project__box">
+            <div class="name-project">
+              <a
+                class="project__title"
+                href="https://roman121082.github.io/safari-landing-page/"
+                target="_blank"
+                >Safari</a
+              >
+              <a
+                class="github__link"
+                href="https://github.com/Roman121082/safari-landing-page.git"
+                target="_blank"
+                ><img
+                  class="github__link-icon"
+                  src="./img/icons/github.png"
+                  alt=""
+              /></a>
+            </div>
+            <a
+              href="https://roman121082.github.io/safari-landing-page/"
+              target="_blank"
+            >
+              <img
+                src="./img/projects/07.jpg"
+                alt="Project img"
+                class="project__img"
+              />
+            </a>
+          </article>
+
+          <!-- / ======================================================8 -->
+          <article class="project__box">
+            <div class="name-project">
+              <a
+                class="project__title"
+                href="https://roman121082.github.io//restaurant/app/"
+                target="_blank"
+                >Restaurant</a
+              >
+              <a
+                class="github__link"
+                href="https://github.com/Roman121082/restaurant.git"
+                target="_blank"
+                ><img
+                  class="github__link-icon"
+                  src="./img/icons/github.png"
+                  alt=""
+              /></a>
+            </div>
+            <a
+              href="https://roman121082.github.io//restaurant/app/"
+              target="_blank"
+            >
+              <img
+                src="./img/projects/08.jpg"
+                alt="Project img"
+                class="project__img"
+              />
+            </a>
+          </article>
+
+          <!-- / ======================================================9 -->
+          <article class="project__box">
+            <div class="name-project">
+              <a
+                class="project__title"
+                href="https://roman121082.github.io/space-landing-page/"
+                target="_blank"
+                >Space</a
+              >
+              <a
+                class="github__link"
+                href="https://github.com/Roman121082/space-landing-page.git"
+                target="_blank"
+                ><img
+                  class="github__link-icon"
+                  src="./img/icons/github.png"
+                  alt=""
+              /></a>
+            </div>
+            <a
+              href="https://roman121082.github.io/space-landing-page/"
+              target="_blank"
+            >
+              <img
+                src="./img/projects/09.jpg"
+                alt="Project img"
+                class="project__img"
+              />
+            </a>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <ul class="social">
+            <li class="social__item">
+              <a href="https://vk.com/rouman1982">
+                <img src="./img/icons/vk.svg" alt="Link" target="_blank"
+              /></a>
+            </li>
+            <li class="social__item">
+              <a href="https://t.me/Roman121082">
+                <img src="./img/icons/tl.svg" alt="Link" target="_blank"
+              /></a>
+            </li>
+            <li class="social__item">
+              <a href="https://github.com/Roman121082">
+                <img src="./img/icons/gitHub.svg" alt="Link" target="_blank"
+              /></a>
+            </li>
+          </ul>
+          <div class="copyright">
+            <p>© 2024</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
 </html>
